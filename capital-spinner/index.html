@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capital Spinner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="tag">States, Countries & Capitals</p>
+      <h1>Capital Spinner</h1>
+      <p class="subtitle">Hit spin to learn a random U.S. state capital or world country capital.</p>
+
+      <div class="mode-row" role="group" aria-label="Choose spinner mode">
+        <button class="mode active" data-mode="all">All</button>
+        <button class="mode" data-mode="usa">USA States</button>
+        <button class="mode" data-mode="world">World Countries</button>
+      </div>
+
+      <button id="spinBtn" class="spin">Spin</button>
+      <p id="status" class="status">Loading countries...</p>
+    </section>
+
+    <section id="resultCard" class="result-card hidden">
+      <p id="resultType" class="result-type"></p>
+      <h2 id="placeName"></h2>
+      <div class="capital-box">
+        <span>Capital</span>
+        <strong id="capitalName"></strong>
+      </div>
+      <p id="extraInfo" class="extra"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
